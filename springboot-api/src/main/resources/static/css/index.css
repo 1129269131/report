@@ -1,0 +1,42 @@
+/*css reset*/
+html,
+body,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+span,
+div,
+p,
+a,
+form,
+input {
+    margin: 0;
+    padding: 0;
+    font-family: helvetica;
+}
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    display: block;
+}
+a,
+input,
+button {
+    -webkit-tap-hightlight-color: rgba(0, 0, 0, 0);
+    -webkit-appearance: none;
+    outline: none;
+    border: none;
+}
+img {
+    display: block;
+}
