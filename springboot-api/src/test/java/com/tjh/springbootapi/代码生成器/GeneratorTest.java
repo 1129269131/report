@@ -18,7 +18,7 @@ public class GeneratorTest {
         GlobalConfig config = new GlobalConfig();
         config.setActiveRecord(true) // 是否支持AR模式
                 .setAuthor("tjh") // 作者
-                .setOutputDir("C:\\Users\\Administrator\\Documents\\GitHub\\commonFunctions\\springboot-api\\src\\main\\java") // 生成路径
+                .setOutputDir("E:\\project\\report\\springboot-api\\src\\main\\java") // 生成路径
 //                .setFileOverride(true)  // 文件覆盖
                 .setIdType(IdType.AUTO) // 主键策略
                 .setServiceName("%sService")  // 设置生成的service接口的名字的首字母是否为I
@@ -30,9 +30,9 @@ public class GeneratorTest {
         DataSourceConfig dsConfig = new DataSourceConfig();
         dsConfig.setDbType(DbType.MYSQL)  // 设置数据库类型
                 .setDriverName("com.mysql.jdbc.Driver")
-                .setUrl("jdbc:mysql://localhost:3306/vhr")
+                .setUrl("jdbc:mysql://106.14.197.159:3306/report")
                 .setUsername("root")
-                .setPassword("root");
+                .setPassword("@Qq123456");
 
         //3. 策略配置
         StrategyConfig stConfig = new StrategyConfig();
@@ -40,7 +40,7 @@ public class GeneratorTest {
                 .setDbColumnUnderline(true)  // 指定表名 字段名是否使用下划线
                 .setNaming(NamingStrategy.underline_to_camel) // 数据库表映射到实体的命名策略
                 .setTablePrefix("tbl_")
-                .setInclude("menu");  // 生成的表
+                .setInclude("test");  // 生成的表
 
         //4. 包名策略配置
         PackageConfig pkConfig = new PackageConfig();
