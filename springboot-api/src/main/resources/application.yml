@@ -1,17 +1,17 @@
 server:
   port: 8081
-spring:
-  datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    username: root
-    password: @Qq123456
-    url: jdbc:mysql://localhost:3306/report?characterEncoding=utf-8&amp;serverTimezone=UTC&amp;useSSL=false
-  thymeleaf:
-    prefix: classpath:/templates/
-    suffix: .html
-  resources:
-    static-locations: classpath:static/
-mybatis-plus:
-  mapper-locations: classpath:mybatis/*.xml
+#spring:
+#  datasource:
+#    driver-class-name: com.mysql.jdbc.Driver
+#    username: root
+#    password: @Qq123456
+#    url: jdbc:mysql://localhost:3306/report?characterEncoding=utf-8&amp;serverTimezone=UTC&amp;useSSL=false
+#  thymeleaf:
+#    prefix: classpath:/templates/
+#    suffix: .html
+#  resources:
+#    static-locations: classpath:static/
+#mybatis-plus:
+#  mapper-locations: classpath:mybatis/*.xml
 
 
